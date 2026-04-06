@@ -7,7 +7,7 @@ export default function TopHelperComponent() {
     { id: 3, name: "Chhim Pojim", points: 870, answers: 48 },
   ];
   return (
-    <div className="w-[360px] p-[24px]">
+    <div className="w-90">
       <div className=" mt-3 bg-white py-4 rounded-2xl shadow px-6 ">
         <div className="flex justify-between ">
           <div className="text-[18px] flex gap-1 font-bold">
@@ -16,11 +16,6 @@ export default function TopHelperComponent() {
           </div>
           <button className="text-[12px] text-[#00518E] ">See All</button>
         </div>
-        {/* <div className="mt-5">
-          {[1, 2, 3].map((user) => (
-            <userCard key={user.id} user={user} />
-          ))}
-        </div> */}
         <div className="mt-5">
           {users.map((user) => (
             <UserCard key={user.id} user={user} />
@@ -30,7 +25,6 @@ export default function TopHelperComponent() {
     </div>
   );
 }
-
 
 function UserCard({ user }) {
   return (

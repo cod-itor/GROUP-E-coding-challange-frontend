@@ -1,9 +1,12 @@
 import React from 'react'
-import PostingTip from './components/PostingTip'
+import QuestionCard from './components/QuestionCard'
+import DropDown from './components/DropDown'
+import FilterBubble from './components/filterBubble'
+
 export default function page() {
   return (
-    <div>
-      home
+    <div className='w-100 h-100 bg-radial-white'>
+      Home
     </div>
   )
 }

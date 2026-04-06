@@ -1,15 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const getAudioWideRegular = localFont({
+  src: './font/Audiowide-Regular.ttf',
+  variable: "--font-audiowide"
+
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const getGoogleSansFlex = localFont({
+  src: './font/GoogleSansFlex.ttf',
+  variable: "--font-google-sans-flex"
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${getAudioWideRegular.variable} ${getGoogleSansFlex.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

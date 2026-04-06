@@ -1,5 +1,3 @@
-import QuestionListSectionComponent from "@/app/components/QuestionListSectionComponent";
-import TagsComponent from "@/app/components/TagsComponent";
 import TopHelperComponent from "@/app/components/TopHelperComponent";
 import React from "react";
 
@@ -19,7 +17,7 @@ export default function page() {
 
           {/* Right Sidebar */}
           <div className="col-span-12 lg:col-span-4 space-y-4">
-            {/* <TopHelperComponent /> */}
+            <TopHelperComponent />
             {/* <TagsComponent /> */}
           </div>
         </main>

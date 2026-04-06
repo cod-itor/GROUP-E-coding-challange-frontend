@@ -5,11 +5,8 @@ import FilterBubble from './components/filterBubble'
 
 export default function page() {
   return (
-    <div>
-      <QuestionCard/>
-      <DropDown/>
-          <FilterBubble/>
-      
+    <div className='w-100 h-100 bg-radial-white'>
+      Home
     </div>
   )
 }

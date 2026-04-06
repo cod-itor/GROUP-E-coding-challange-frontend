@@ -1,16 +1,51 @@
 @import "tailwindcss";
 
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-description: var(--description);
+  --color-primary: var(--primary);
+  --color-light-blue: var(--light-blue);
+  --color-main: var(--main-bg);
+  --color-tag: var(--tag);
+  --color-dark: var(--dark);
+  --background-image-footer-gradient: linear-gradient(
+    180deg,
+    var(--footer-dark) 0%,
+    var(--footer-light) 100%
+  );
+  --background-image-linear-blue: linear-gradient(
+    180deg,
+    var(--blue-dark) 0%,
+    var(--blue-dark) 50%,
+    var(--blue-bright) 100%
+  );
+  --background-image-radial-white: radial-gradient(
+    circle,
+    #ffffff 0%,
+    #d2e7f8 50%,
+    #ffffff 100%
+  );
+
+  --color-blue-dark: #012e51;
+  --color-blue-bright: #137cff;
+  
+  --font-title: var(--font-audiowide);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --description: #6b6b6b;
+  --primary: #00518e;
+  --light-blue: #e6eef4;
+  --main-bg: #f5faff;
+  --tag: #73899a;
+  --dark: #011b3e;
+  --footer-dark: #011b3e;
+  --footer-light: #003e6d;
+  --blue-dark: #012e51;
+  --blue-bright: #137cff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,4 +55,7 @@
   }
 }
 
-
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
